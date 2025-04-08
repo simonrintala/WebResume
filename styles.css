@@ -1,0 +1,411 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: flex;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Signika;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0 10%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ede8f5;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  width: 100%;
+}
+
+.list-logo {
+  margin-right: auto;
+}
+
+.navbar li:not(.list-logo) img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.navbar .list-logo img {
+  width: 55px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.navbar img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.navbar a:not(.list-logo a) {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 7px;
+  position: relative;
+}
+
+.intro-header {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+  will-change: opacity, transform;
+}
+
+.intro-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header-paragraph {
+  line-height: 1.5;
+  font-weight: 10;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.header-paragraph {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.header-paragraph.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin-top: 200px;
+}
+
+.gallery-image {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+/* First column images - align left edge */
+.gallery-image:nth-child(odd) {
+  align-items: flex-start; /* Left-align odd items */
+}
+
+/* Second column images - align right edge */
+.gallery-image:nth-child(even) {
+  align-items: flex-end; /* Right-align even items */
+}
+
+.gallery-image img {
+  width: 65%;
+  max-width: 85%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-caption {
+  width: 85%;
+  font-size: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin: 80px 0px 80px 0px;
+}
+
+.gallery-image:hover img {
+  transform: scale(1.02);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.content-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.article-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 100px 0 20px 0; /* Space below heading */
+  display: flex;
+  justify-content: flex-start;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.article-paragraph {
+  font-size: 16px;
+  margin: 0 20px 20px 0;
+  letter-spacing: 1.5px;
+}
+
+section {
+  background-color: #adbbda;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  flex-direction: column;
+  height: 250px;
+  border-radius: 10px;
+  margin-top: 150px;
+}
+
+h4 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+
+/* From Uiverse.io by satyamchaudharydev ede8f0 */
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(0, 0, 0, 0.6);
+  --animation-color: #262727;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  font-size: 24px;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 250px;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer li:not(.list-logo) img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer ul {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  width: 100%;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
