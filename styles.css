@@ -122,7 +122,7 @@ table {
 
 body {
   font-family: Signika;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
   padding: 0 10%;
   max-width: 1440px;
@@ -205,7 +205,6 @@ h1 {
 }
 
 .header-paragraph {
-  line-height: 1.5;
   font-weight: 10;
   font-size: 24px;
   letter-spacing: 3px;
@@ -313,7 +312,7 @@ h3 {
 }
 
 .article-paragraph {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 20px 20px 0;
   letter-spacing: 1.5px;
 }
@@ -350,8 +349,8 @@ h4 {
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(0, 0, 0, 0.6);
-  --animation-color: #262727;
+  --text-stroke-color: rgba(32, 31, 31, 0.6);
+  --animation-color: #030303;
   --fs-size: 2em;
   letter-spacing: 3px;
   font-size: 24px;
