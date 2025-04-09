@@ -234,7 +234,6 @@ h1 {
 
 .gallery-image {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -249,8 +248,9 @@ h1 {
 }
 
 .gallery-image img {
-  width: 65%;
-  max-width: 85%;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
@@ -259,14 +259,14 @@ h1 {
 }
 
 .gallery-caption {
-  width: 85%;
+  width: 100%;
+  max-width: 350px;
   font-size: 40px;
-  margin-top: 20px;
   display: flex;
   justify-content: flex-start;
   font-size: 36px;
   letter-spacing: 3px;
-  margin: 80px 0px 80px 0px;
+  margin: 80px 0px 80px 60px;
 }
 
 .gallery-image:hover img {
@@ -289,7 +289,7 @@ article {
 
 .article-image {
   width: 300px;
-  height: auto;
+  max-height: 300px;
   border-radius: 10px;
 }
 
@@ -299,7 +299,7 @@ article {
 
 h2 {
   font-size: 36px;
-  margin: 100px 0 20px 0; /* Space below heading */
+  margin: 100px 0 20px 0;
   display: flex;
   justify-content: flex-start;
   letter-spacing: 3px;
@@ -335,8 +335,6 @@ h4 {
   margin-bottom: 50px;
 }
 
-/* From Uiverse.io by satyamchaudharydev ede8f0 */
-/* === removing default button style ===*/
 .button {
   margin: 0;
   height: auto;
@@ -346,7 +344,6 @@ h4 {
   cursor: pointer;
 }
 
-/* button styling */
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(32, 31, 31, 0.6);
@@ -359,7 +356,7 @@ h4 {
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -372,7 +369,7 @@ h4 {
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
 .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
@@ -411,4 +408,116 @@ footer {
 
 .footer a:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 430px) {
+  body {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar ul {
+    align-items: center;
+    gap: 10px;
+  }
+
+  header {
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+
+  .header-paragraph {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0 10px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-top: 100px;
+  }
+
+  .gallery-image {
+    align-items: center !important;
+  }
+
+  .gallery-caption {
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin-right: 60px;
+  }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .article-paragraph {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+
+  section {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 18px;
+    --fs-size: 1.5em;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-list {
+    align-items: center;
+    gap: 10px;
+  }
 }

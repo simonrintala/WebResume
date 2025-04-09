@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
       paragraph.classList.add("visible");
     }, 500 + index * 300); 
   });
-});
+}); // text animation
 
 document
   .getElementById("contactForm")
@@ -36,7 +36,7 @@ document
       document.getElementById("formMessage").style.color = "#3D52A0";
       document.getElementById("formMessage").style.display = "block";
 
-      //Reset the form fields after submission
+      // Reset the form fields after submission
       document.getElementById("contactForm").reset();
     } else {
       // Show an error message if any field is empty

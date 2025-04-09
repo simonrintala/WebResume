@@ -265,3 +265,39 @@ footer {
 .footer a:hover {
   opacity: 0.8;
 }
+
+
+@media(max-width: 430px) {
+  body {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar ul {
+    align-items: center;
+    gap: 10px;
+  }
+
+  form {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-list {
+    align-items: center;
+    gap: 10px;
+  }
+}
