@@ -223,143 +223,142 @@ h1 {
 }
 
 .project-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    max-width: 1440px;
-    margin-top: 200px;
-  }
-  
-  .gallery-image {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* First column images - align left edge */
-  .gallery-image:nth-child(odd) {
-    align-items: flex-start; /* Left-align odd items */
-  }
-  
-  /* Second column images - align right edge */
-  .gallery-image:nth-child(even) {
-    align-items: flex-end; /* Right-align even items */
-  }
-  
-  .gallery-image img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-    display: block;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-caption {
-    width: 100%;
-    max-width: 350px;
-    font-size: 40px;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 36px;
-    letter-spacing: 3px;
-    margin: 80px 0px 80px 60px;
-  }
-  
-  .gallery-image:hover img {
-    transform: scale(1.02);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin-top: 200px;
+}
+
+.gallery-image {
+  display: flex;
+  flex-direction: column;
+}
+
+/* First column images - align left edge */
+.gallery-image:nth-child(odd) {
+  align-items: flex-start; /* Left-align odd items */
+}
+
+/* Second column images - align right edge */
+.gallery-image:nth-child(even) {
+  align-items: flex-end; /* Right-align even items */
+}
+
+.gallery-image img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-caption {
+  width: 100%;
+  max-width: 350px;
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin: 80px 0px 80px 60px;
+}
+
+.gallery-image:hover img {
+  transform: scale(1.02);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 250px;
+}
+
+.footer-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.footer li:first-child {
+  margin-right: auto;
+}
+
+.footer li:not(.list-logo) img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer ul {
+  display: flex;
+  width: 100%;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 430px) {
+  body {
+    padding: 0 20px;
+    max-width: 100%;
   }
 
-  
-  footer {
-    display: flex;
-    justify-content: space-between;
+  .navbar {
+    flex-direction: row;
     align-items: center;
-    font-size: 14px;
-    font-weight: 100;
-    margin-top: 250px;
   }
-  
-  .footer-list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
+
+  .navbar ul {
+    align-items: center;
+    gap: 10px;
   }
-  
-  .footer li:first-child {
-    margin-right: auto;
+
+  header {
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
   }
-  
-  .footer li:not(.list-logo) img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+
+  h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
   }
-  
-  .footer ul {
-    display: flex;
+
+  .header-paragraph {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0 10px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-top: 100px;
+  }
+
+  .gallery-image {
+    align-items: center !important;
+  }
+
+  .gallery-caption {
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
     width: 100%;
+    margin-right: 60px;
   }
-  
-  .footer a:hover {
-    opacity: 0.8;
-  }
-  
-  @media(max-width: 430px) {
-    body {
-      padding: 0 20px;
-      max-width: 100%;
-    }
-  
-    .navbar {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .navbar ul {
-      align-items: center;
-      gap: 10px;
-    }
-
-    header {
-      align-items: center;
-      text-align: center;
-      margin-top: 100px;
-    }
-  
-    h1 {
-      font-size: 36px;
-      letter-spacing: 4px;
-    }
-  
-    .header-paragraph {
-      font-size: 18px;
-      letter-spacing: 2px;
-      padding: 0 10px;
-    }
-
-    .project-gallery {
-      grid-template-columns: 1fr;
-      gap: 60px;
-      margin-top: 100px;
-    }
-  
-    .gallery-image {
-      align-items: center !important;
-    }
-  
-    .gallery-caption {
-      justify-content: center;
-      font-size: 24px;
-      text-align: center;
-      width: 100%;
-      margin-right: 60px;
-    }
 
   footer {
     flex-direction: row;

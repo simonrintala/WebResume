@@ -186,7 +186,6 @@ h2 {
   letter-spacing: 4px;
 }
 
-
 label {
   font-size: 24px;
   font-weight: 500;
@@ -194,7 +193,8 @@ label {
   margin-bottom: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   font-size: 18px;
   font-weight: 400;
   font-family: Signika;
@@ -206,7 +206,6 @@ form {
   align-items: flex-start;
   max-width: 500px;
   width: 100%;
-  
 }
 
 input,
@@ -220,7 +219,7 @@ textarea {
 
 button {
   padding: 15px;
-  background-color: #8697C4;
+  background-color: #8697c4;
   color: white;
   border: none;
   border-radius: 10px;
@@ -267,8 +266,7 @@ footer {
   opacity: 0.8;
 }
 
-
-@media(max-width: 430px) {
+@media (max-width: 430px) {
   body {
     padding: 0 20px;
     max-width: 100%;
@@ -288,7 +286,6 @@ footer {
     width: 100%;
     padding-right: 20px;
   }
-
 
   footer {
     flex-direction: row;

@@ -6,11 +6,10 @@ window.addEventListener("DOMContentLoaded", () => {
     heading.classList.add("visible");
   }, 100);
 
-
   paragraphs.forEach((paragraph, index) => {
     setTimeout(() => {
       paragraph.classList.add("visible");
-    }, 500 + index * 300); 
+    }, 500 + index * 300);
   });
 }); // text animation
 
@@ -26,7 +25,6 @@ document
 
     // Validate that fields are not empty
     if (name && email && message) {
-     
       // Create a new FormData object to hold the form data
       document.getElementById("formMessage").textContent =
         "Thank you for your message, " +
