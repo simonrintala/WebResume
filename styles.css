@@ -128,13 +128,13 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background-color: #ede8f5;
+  color: #333;
 }
 
 .navbar {
   display: flex;
   width: 100%;
   padding: 0 10px;
-  border-radius: 10px;
 }
 
 .navbar ul {
@@ -380,7 +380,8 @@ h4 {
 
 footer {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   font-size: 14px;
   font-weight: 100;
   margin-top: 250px;
@@ -388,6 +389,13 @@ footer {
 
 .footer-list {
   display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.footer li:first-child {
+  margin-right: auto;
 }
 
 .footer li:not(.list-logo) img {
@@ -398,10 +406,6 @@ footer {
 
 .footer ul {
   display: flex;
-  align-items: flex-end;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
   width: 100%;
 }
 

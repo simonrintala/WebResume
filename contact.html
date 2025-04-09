@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Signika"
+    />
+  </head>
+  <body>
+
+    <nav class="navbar">
+        <ul>
+          <li class="list-logo">
+            <a href="index.html"><img src="images/suriname.png" alt="" /></a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <!-- <li><a href="#third">Third option</a></li> -->
+          <li>
+            <a href="https://github.com/simonrintala"
+              ><img src="images/github-logo.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a class="linkedin-image" href="#"
+              ><img src="images/linkedin.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <section id="contact">
+        <form id="contactForm">
+            <h2>Contact Me</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Write your message here" rows="4" required></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      
+        <p id="formMessage"></p>
+      </section>
+
+
+
+    <footer class="footer">
+        <ul class="footer-list">
+          <li>All Rights Reserved® Simon Rintala</li>
+          <li>
+            <a href="https://github.com/simonrintala"
+              ><img src="images/github-logo.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a class="linkedin-image" href="#"
+              ><img src="images/linkedin.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
